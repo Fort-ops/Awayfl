@@ -31,12 +31,6 @@
 	<body></body>
 	<script src="../loading.js"></script>
 	<script>
-		//Embedabbl
-		enableLoadingScreen(document.body);
-		var funnyVariable = 0;
-		var executableUrl = getUrlParameter("swf", true);
-		if (!executableUrl) displayError(`Error: SWF Bundle URL Not Valid`, `Given SWF Bundle ${executableUrl ? executableUrl : ""} not valid.`); //Invalid Url
-		brokenUrlCheck(executableUrl, () => {
 			//Core Logic
 			const gameConfig = {
 				width: 550,
